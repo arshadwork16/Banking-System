@@ -1,0 +1,143 @@
+.container {
+    padding: 70px;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 50px 135px 135px 135    px;
+    gap: 10px;
+    align-items: center;
+}
+
+.addmoney {
+    display: flex;
+    border: 2px solid black;
+    width: 200px;
+    justify-content: center;
+}
+
+
+.withdraw {
+    display: flex;
+    border: 2px solid black;
+    width: 200px;
+    justify-content: center;
+}
+
+.showbalance {
+    display: flex;
+    border: 2px solid black;
+    width: 200px;
+    justify-content: center;
+}
+
+button {
+    margin: 12px;
+    height: 34px;
+    width: 95px;
+}
+/* Basic page setup */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main container */
+.container {
+    background: white;
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 340px;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Back button */
+.backPage svg {
+    transition: transform 0.3s ease;
+}
+
+.backPage svg:hover {
+    transform: translateX(-5px);
+}
+
+/* Each section layout */
+.addmoney,
+.withdraw,
+.showbalance {
+    margin-top: 25px;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+    width: 180px;
+    box-shadow: 0 4px 10px rgba(79, 172, 254, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(79, 172, 254, 0.4);
+}
+
+/* Inputs */
+input[type="number"] {
+    padding: 10px 12px;
+    border: 2px solid #4facfe;
+    border-radius: 8px;
+    width: 160px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #00f2fe;
+    box-shadow: 0 0 8px rgba(0, 242, 254, 0.3);
+}
+
+/* Status messages */
+h4 {
+    color: #2b2b2b;
+    font-weight: 600;
+    background: #f1f1f1;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s ease;
+}
+
+div[style*="Procesing"],
+div:has(h4) {
+    animation: fadeIn 0.6s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

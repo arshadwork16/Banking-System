@@ -1,0 +1,59 @@
+body {
+    width: auto;
+    background: linear-gradient(to bottom, #e0f2f7, #a7d9ed);
+    font-family: "BBH Sans Bartle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    margin-top: 85px;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 585px;
+    display: grid;
+    grid-template-rows: 170px 60px 60px 60px 60px 80px 50px;
+    grid-template-columns: 470px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    color: #478559;
+}
+
+.container input {
+    background-color: transparent;
+    border: 2px solid gray;
+    height: 25px;
+    width: 200px;
+}
+
+.buttons {
+    width: 110px;
+    justify-self: end;
+    cursor: pointer;
+}
+
+.buttons #submit {
+    padding: 6px 12px 8px 13px ;
+    /* color: blue; */
+    cursor: pointer;
+    background-color: blue;
+}
+
+.alink {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 110px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+.error {
+    justify-self: center;
+    color: crimson;
+    font-size: small;
+}
